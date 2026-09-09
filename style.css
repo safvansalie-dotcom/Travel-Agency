@@ -1,0 +1,77 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+padding: 20px 60px;
+    gap:40px;
+    font-family: "Manrope", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.4;
+    
+   
+    
+}
+.navbar ul li a{
+    color: #193D34;
+    text-decoration: none;
+}
+.navbar ul {
+        display: flex;
+        justify-content: space-around;
+        gap: 20px;
+        list-style-type: none;
+        align-items: center;
+        
+    }
+    button {
+    border: none;
+    cursor: pointer;
+    font-family: "Manrope", Arial, sans-serif;
+    font-weight: 600;
+    line-height: 1.4;
+    }
+
+.button-plan {
+    background-color: #193D34;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 50px;
+}
+
+.button-explore {
+    background-color: #193D34;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 50px;
+}
+    .main-bg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-size: cover;
+    background-position: center;
+    background-image: url(media/pexels-omar-ramadan-1739260-8658111.jpg);
+    background-size: cover; background-position: center; background-repeat: no-repeat;
+    width: 100%;
+}
+.hero{
+ display: flex;
+        height: 500px;
+        align-items: center;
+        color: #0B2638;
+}
+.main-content h1{
+    font-size: 72px;
+    margin: 0 0 16px 0;
+    font-weight: 550;
+    color: #0B2638;
+}
+.main-content p{
+    font-size: 17px;
+}
