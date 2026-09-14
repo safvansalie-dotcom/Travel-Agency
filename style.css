@@ -1,77 +1,154 @@
-body{
-    padding: 0px;
-    margin: 0px;
+body {
+  padding: 0;
+  margin: 0;
 }
 
-.navbar{
-    display: flex;
-    justify-content: space-between;
-padding: 20px 60px;
-    gap:40px;
-    font-family: "Manrope", Arial, sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 1.4;
-    
-   
-    
+.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 20px 60px;
+  gap: 40px;
+  font-family: "Manrope", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.4;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
 }
-.navbar ul li a{
-    color: #193D34;
-    text-decoration: none;
-}
+
 .navbar ul {
-        display: flex;
-        justify-content: space-around;
-        gap: 20px;
-        list-style-type: none;
-        align-items: center;
-        
-    }
-    button {
-    border: none;
-    cursor: pointer;
-    font-family: "Manrope", Arial, sans-serif;
-    font-weight: 600;
-    line-height: 1.4;
-    }
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  list-style-type: none;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li a {
+  color: #193d34;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 600;
+  line-height: 1.4;
+  box-sizing: border-box;
+}
 
 .button-plan {
-    background-color: #193D34;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 50px;
+  background-color: transparent;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 50px;
+  justify-self: end;
+  border: 2px solid rgb(63, 62, 62);
+}
+
+.main-bg {
+  display: flex;
+  flex-direction: column;
+  background-image: url(Media/wj_y2017fufu-mountain-9784922_1920.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 610px;
+  position: relative;
+  box-sizing: border-box;
+  
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  position: absolute;
+  left: 60px;
+  bottom: 100px;
+  max-width: 640px;
+  z-index: 2;
+}
+
+.hero-content h1 {
+  font-size: 90px;
+  margin: 0;
+  font-weight: 550;
+  color: #0b2638;
+  line-height: 1.05;
+}
+
+.hero-subtext-wrap {
+  display: inline-block;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px 16px;
+  border-radius: 8px;
+}
+
+.hero-content p {
+  color: #f4f4f2;
+  margin: 0;
+  font-size: 17px;
 }
 
 .button-explore {
-    background-color: #193D34;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 12px 24px;
+  border-radius: 50px;
+  align-self: flex-start;
+  border: 2px solid whitesmoke;
+  margin-top: 8px;
 }
-    .main-bg {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-size: cover;
-    background-position: center;
-    background-image: url(media/pexels-omar-ramadan-1739260-8658111.jpg);
-    background-size: cover; background-position: center; background-repeat: no-repeat;
-    width: 100%;
+.Destinations {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  text-align: center;
+  padding: 60px;
+  box-sizing: border-box;
 }
-.hero{
- display: flex;
-        height: 500px;
-        align-items: center;
-        color: #0B2638;
+
+.dest-card {
+  border: 1px solid #ccc;
+  border-radius: 20px 20px 20px 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  
 }
-.main-content h1{
-    font-size: 72px;
-    margin: 0 0 16px 0;
-    font-weight: 550;
-    color: #0B2638;
+
+.dest-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover; 
+  display: block;
 }
-.main-content p{
-    font-size: 17px;
+
+.dest-card h4 {
+  margin: 16px 0 8px;
+  font-weight: 600;
+}
+
+.button-buy {
+  border-radius: 50px;
+  border: 2px solid black;
+  padding: 12px 24px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  cursor: pointer;
+  font-family: "Manrope", Arial, sans-serif;
+  font-weight: 600;
+  margin: 0 auto 20px;
 }
